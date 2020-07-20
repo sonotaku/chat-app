@@ -1,42 +1,74 @@
 .wrapper {
   display: flex;
+  overflow: hidden;
 }
+
 .side-bar {
+  background-color: #253141;
   width: 300px;
   height: 100vh;
-  background-color: #253141;
-  padding: 0 20px;
 }
 
-.side-header{
+.side-bar-header {
   height: 100px;
+  padding: 0 20px;
   background-color: #253141;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.side-body{
+.header-name a{
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.create-room {
+  font-size: 10px;
+}
+
+.create-room a {
+  border: 1px solid lightblue;
+  padding: 14px;
+  color: deepskyblue;
+  text-decoration: none;
+}
+.rooms {
+  background-color: #2F3E51;
   height: calc(100vh - 100px);
-  background-color: #2f3e51;
+  padding: 0 20px;
+  /* スクロールができるようになる */
+  /* overflow: scroll; */
+}
+
+.room {
+  padding: 20px 0 40px;
+}
+
+.room-name a {
+  text-decoration: none;
+  color: white;
 }
 
 .chat {
-  width: calc(100% - 300px);
   background-color: #ffffff;
+  width: calc(100% - 300px);
 }
 
-.main-header{
+.chat-header {
   height: 100px;
-  background-color: #ffffff;
   padding: 0 40px;
 }
 
-.main-content{
-  height: calc(100vh - 190px);
-  background-color: #fafafa;
+.messages {
+  background-color: #FAFAFA;
+  height: calc(100vh - 100px - 90px);
   padding: 46px 40px 0;
 }
 
-.main-form{
+.form {
+  background-color: #DDDDDD;
   height: 90px;
-  background-color: #dddddd;
   padding: 20px 40px;
 }
